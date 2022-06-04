@@ -1,10 +1,11 @@
 import React from "react"
+import { NavBar } from "./nav"
 
 export const HoneyDew = () => {
 
     return (
-        <>       
-            <h1>Welcome to HoneyDew</h1>
+        <>     
+            <NavBar />
         </>
     )
  }
