@@ -1,4 +1,4 @@
-import { Stack, TextField, FormControlLabel, Checkbox, Button, Box } from "@mui/material"
+import { Stack, TextField, FormControlLabel, Checkbox, Button } from "@mui/material"
 import { useState } from "react"
 
 
@@ -17,8 +17,19 @@ export const RegisterForm = () => {
     const handleSubmit = e => {
         console.log("Submit")
 
-        
+        return fetch(`http://localhost:8088/members`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(member)
+        })
+            .then(response => response.json())
+            .then(() => {
 
+                // TODO !!! Bring new member to home screen
+
+            })
     }
 
     const handleChange = e => {
@@ -58,7 +69,8 @@ export const RegisterForm = () => {
             <FormControlLabel control={<Checkbox id="newHouse" value={member.newHouse} onChange={handleChange}/>} label="New Household"/>
             <Button
                 onClick={(clickEvent) => handleSubmit(clickEvent)}
-                color="inherit">Submit</Button>
+                color="inherit">Submit
+            </Button>
             
             
     </Stack>

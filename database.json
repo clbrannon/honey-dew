@@ -1,0 +1,14 @@
+{
+  "members": [
+    {
+      "fullName": "Chris Brannon",
+      "username": "clbrannon",
+      "password": "chris",
+      "parent": true,
+      "newHouse": false,
+      "id": 1
+    }
+  ],
+  "posts": [],
+  "house": []
+}
