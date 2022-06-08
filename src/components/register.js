@@ -4,15 +4,16 @@ import { useState } from "react"
 
 export const RegisterForm = () => {
 
-    const [member, setMember] = useState({
+    const blankMember = {
 
         fullName: "",
         username: "",
         password: "",
         parent: false,
         newHouse: false
+    }
 
-    })
+    const [member, setMember] = useState(blankMember)
 
     const handleSubmit = e => {
         console.log("Submit")
@@ -26,6 +27,8 @@ export const RegisterForm = () => {
         })
             .then(response => response.json())
             .then(() => {
+
+                setMember(blankMember)
 
                 // TODO !!! Bring new member to home screen
 
