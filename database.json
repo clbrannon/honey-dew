@@ -39,8 +39,26 @@
       "parent": false,
       "newHouse": false,
       "id": 5
+    },
+    {
+      "fullName": "Jeffrey Brannon",
+      "username": "jbbrannon",
+      "password": "jeff",
+      "parent": false,
+      "newHouse": false,
+      "id": 6
     }
   ],
-  "posts": [],
+  "posts": [
+    {
+      "title": "Title",
+      "desc": "wrtgrtwgwrt",
+      "repeat": true,
+      "endDate": "07/2020",
+      "assignSelect": "",
+      "undefined": "Maple Brannon",
+      "id": 1
+    }
+  ],
   "house": []
 }

@@ -36,7 +36,7 @@ export const RegisterForm = () => {
     }
 
     const handleChange = e => {
-        console.log(e.target.id)
+
         if (e.target.id === "newHouse") {
             setMember(member => ({...member, [e.target.id]: e.target.checked}))
         }
@@ -56,14 +56,14 @@ export const RegisterForm = () => {
     return (
         
       
-    <Stack 
+   <Stack 
         
         direction="column"
         justifyContent="center"
         alignItems="center"
         spacing={1}
         mt={15}
-    >
+    > 
             
             <TextField id="fullName" label="Full Name"  variant="standard" value={member.fullName} onChange={handleChange}/>
             <TextField id="username" label="Username"  variant="standard" value={member.username} onChange={handleChange}/>

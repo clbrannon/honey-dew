@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, IconButton, Typography, Stack, Item, Button } from "@mui/material"
+import { AppBar, Toolbar, IconButton, Typography, Stack, Button } from "@mui/material"
 import EmojiNatureIcon from '@mui/icons-material/EmojiNature';
 
 export const NavBar = () => {
