@@ -49,16 +49,6 @@
       "id": 6
     }
   ],
-  "posts": [
-    {
-      "title": "Title",
-      "desc": "wrtgrtwgwrt",
-      "repeat": true,
-      "endDate": "07/2020",
-      "assignSelect": "",
-      "undefined": "Maple Brannon",
-      "id": 1
-    }
-  ],
+  "posts": [],
   "house": []
 }
