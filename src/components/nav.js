@@ -1,15 +1,15 @@
 import { AppBar, Toolbar, IconButton, Typography, Stack, Button } from "@mui/material"
-import EmojiNatureIcon from '@mui/icons-material/EmojiNature';
+import { House } from "@mui/icons-material";
 
 export const NavBar = () => {
     return (
         <AppBar position='static'>
             <Toolbar>
                 <IconButton size='large' edge='start' color='inherit'>
-                    <EmojiNatureIcon />
+                    <House />
                 </IconButton>
                 <Typography variant='h6' component='div' sx={{ flexGrow: 1}}>
-                    Honey Dew
+                    Honey-Doo
                 </Typography>
                 <Stack direction="row" spacing={2}>
                     <Button color="inherit">Home</Button>

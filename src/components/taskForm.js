@@ -3,21 +3,24 @@ import { Button, Stack, TextField, FormControlLabel, Checkbox, InputLabel, Selec
 
 
 
+
 {/* TODO!!!! Add id of poster to object */}
 
 
 export const TaskForm = () => {
 
+    const blankTask = {
+
+        title: "",
+        desc: "",
+        noEnd: false,
+        endDate: "",
+        assignSelect: ""
+
+    }
+
     const [family, setFamily] = useState([])
-    const [task, setTask] = useState({
-
-            title: "",
-            desc: "",
-            noEnd: false,
-            endDate: "",
-            assignSelect: ""
-
-    })
+    const [task, setTask] = useState(blankTask)
 
     {/* TODO!! make desc optional with checkbox */}
 
@@ -39,16 +42,15 @@ export const TaskForm = () => {
 
         if (e.target.id === "noEnd") {
             setTask(task => ({...task, [e.target.id]: e.target.checked}))
-            console.log(task)
+
         }
 
         else if (e.target.name === "assignSelect") {
             setTask(task => ({...task, [e.target.name]: e.target.value}))
         }
-        
+
         else {
             setTask(task => ({...task, [e.target.id]: e.target.value}))
-            console.log(e.target)
 
         }
 
@@ -83,8 +85,9 @@ export const TaskForm = () => {
         })
             .then(response => response.json())
             .then(() => {
-
-                
+                console.log(task)
+                setTask(blankTask)
+                console.log(task)
                 // TODO !!! Bring up "Submit another? text"
 
             })
