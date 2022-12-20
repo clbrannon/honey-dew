@@ -26,7 +26,7 @@
     },
     {
       "fullName": "Rose Brannon",
-      "username": "rmbrannon",
+      "username": "robrannon",
       "password": "rose",
       "parent": false,
       "newHouse": false,
@@ -39,6 +39,14 @@
       "parent": false,
       "newHouse": false,
       "id": 5
+    },
+    {
+      "fullName": "Jeffrey Brannon",
+      "username": "jbbrannon",
+      "password": "jeff",
+      "parent": false,
+      "newHouse": false,
+      "id": 6
     }
   ],
   "posts": [],
